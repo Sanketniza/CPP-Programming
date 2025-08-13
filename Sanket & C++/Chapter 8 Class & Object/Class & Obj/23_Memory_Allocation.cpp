@@ -22,7 +22,7 @@ public:
     void setPrice(void);   //^ declaration of function (method) outside the class shope
     void displayPrice(void);
 };
-, 
+
 void shope ::setPrice(void)
 {
     cout << "Enter the number of  items : " << counter + 1 << endl;
