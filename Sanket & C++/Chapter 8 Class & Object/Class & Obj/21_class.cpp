@@ -7,10 +7,10 @@ class student //^ structure is replaced by class with more feature's
        //  In classes the data is by default private hota hai
        //  if I write like this it can work --- > int a , b ,c ;
   
-  private:
+  private: //* Access Specifier: private members are only accessible from within the class.
   int a, b, c;
 
-public:
+public: //* Access Specifier: public members are accessible from outside the class.
     int d, e;
     void setData(int a1, int b1, int c1); // declaration
     void getData()
@@ -24,7 +24,7 @@ public:
 };
 
 //* Assigning the value , out side the class
-void student ::setData(int a1, int b1, int c1) // ^ parameter 
+void student :: setData(int a1, int b1, int c1) // ^ parameter 
 {           // This tell to compiler ki setData is present in student class
     a = a1; // :: --> scope resolution
     b = b1;
