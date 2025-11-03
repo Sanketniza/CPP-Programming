@@ -11,6 +11,7 @@ class student //^ structure is replaced by class with more feature's
   int a, b, c;
 
 public: //* Access Specifier: public members are accessible from outside the class.
+
     int d, e;
     void setData(int a1, int b1, int c1); // declaration
     void getData()
@@ -22,11 +23,12 @@ public: //* Access Specifier: public members are accessible from outside the cla
         cout << "Values of private members are d :" << e << endl;
     }
 };
-
+ 
 //* Assigning the value , out side the class
 void student :: setData(int a1, int b1, int c1) // ^ parameter 
 {           // This tell to compiler ki setData is present in student class
-    a = a1; // :: --> scope resolution
+            // :: --> scope resolution
+    a = a1; 
     b = b1;
     c = c1;
 }
