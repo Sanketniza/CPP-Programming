@@ -2,65 +2,40 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-class binary {
-    string s;
+
+class Parent {
+
+    int data;
 
     public:
-        void read();
-        void check();
-        void display();
-        void compliment();
-};
 
-void binary :: read() {
-    // string s;
-    cin >> s;
-}
-
-void binary :: check() {
-
-    cout << "checking binary " << endl;
-    for(int i = 0; i < s.length(); i++) {
-        if(s.at(i) != '0' && s.at(i) != '1') {
-            cout << "invalid string" << endl;
-            exit(0);
-        }
-    }
-}
-
-void binary :: compliment() {
-
-    cout << "compliment " << endl;
-    for (int i = 0; i < s.length(); i++)
-    {
-        if (s.at(i) == '0')
-        {
-            s.at(i) = '1';
+        void setData(int data) {
+            this->data = data;
+            cout << "The value of data is : " << data << endl;
         }
 
-        else
-        {
-            s.at(i) = '0';
+        void house() {
+            cout << "I own a house\n";
         }
+    };
+    
+    class Child : public Parent { // Child inherits Parent
+    public:
+        void car() {
+            cout << "I own a car\n";
+        }
+
+        void display() {
+            cout << "The value of data is : " << data << endl;
+        }
+    };
+    
+    int main() {
+        Child c;
+        c.house(); // inherited from Parent
+        c.car();   // child’s own function
+
+        c.setData(23);
+        c.display();
     }
-}
-
-void binary :: display() {
-    cout << "display result" << endl;
-
-    for(int i = 0; i < s.length(); i++) {
-        cout << s.at(i);
-    }
-    cout << endl;
-}
-
-int main() {
-
-    binary b;
-    b.read();
-    b.check();
-    b.display();
-    b.compliment();
-    b.display();
- return 0;
-}
+    

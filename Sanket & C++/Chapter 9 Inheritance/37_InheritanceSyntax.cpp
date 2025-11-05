@@ -38,10 +38,11 @@ using namespace std;
 */
 
 // todo--> Creating a program class derived from Employee Base class
-class Programmer :  public Employee {     //&     public derivation
+class Programmer :  public Employee {     //     public derivation
 
     public:
         int languageCode;
+        
         Programmer(int inpId){ // this is an constructor......
             id = inpId;
             languageCode = 9;

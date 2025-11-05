@@ -3,7 +3,11 @@
 /*           43 //!      Ambiguity Resolution In Inheritance                  */
 /* -------------------------------------------------------------------------- */
 
-//^  Ambiguity = compiler confused between which function I call or print.
+//^  Ambiguity = compiler confused between which function I call or print called Daimand Problem.
+
+// Diamand Problem = when a class is derived from two classes and both classes have the same function name then it is called Diamand Problem.
+// Solution = use scope resolution operator :: to call the function of the class.
+
 
 #include <iostream>
 using namespace std;
