@@ -2,40 +2,20 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-
-class Parent {
-
-    int data;
-
+class X {
     public:
-
-        void setData(int data) {
-            this->data = data;
-            cout << "The value of data is : " << data << endl;
-        }
-
-        void house() {
-            cout << "I own a house\n";
+        void display() {
+            cout << "Hello ";
         }
     };
     
-    class Child : public Parent { // Child inherits Parent
-    public:
-        void car() {
-            cout << "I own a car\n";
-        }
-
-        void display() {
-            cout << "The value of data is : " << data << endl;
-        }
-    };
+    class Y : public X {};
+    class Z : public X {};
+    
+    class P : public Y, public Z {};
     
     int main() {
-        Child c;
-        c.house(); // inherited from Parent
-        c.car();   // child’s own function
-
-        c.setData(23);
-        c.display();
+        P obj;
+        obj.display(); // now works
     }
     

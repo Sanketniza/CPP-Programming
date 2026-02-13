@@ -7,10 +7,10 @@
                     //!    Theory Part OF virtual Base Class
 /* 
 
-              todo:                class A      ( //? Here class A is Virtual Base Class ...) 
-                                     |
-                               a     |    a
-                                     V
+              todo:               class A      ( //? Here class A is Virtual Base Class ...) 
+                                    |
+                              a     |    a
+                                    V
                            ---------------------
                            |                   | 
                            |                   |
