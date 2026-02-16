@@ -35,10 +35,10 @@ void student :: setData(int a1, int b1, int c1) // ^ parameter
 
 int main()
 {
-    student s1; //& object creation
-    // here s1.a == 34 --> this will throw as 'a' is private;
+    student s1; //? object creation
+    // here s1.a == 34 --> this will throw error as 'a' is private;
 
-    s1.d = 34;
+    s1.d = 34; // Assigning the value to public member of class
     s1.e = 56;
     s1.setData(90, 85, 48);   // setting values to the member variables using function setData
     s1.getData();       // getting values from the member variables using function getData 

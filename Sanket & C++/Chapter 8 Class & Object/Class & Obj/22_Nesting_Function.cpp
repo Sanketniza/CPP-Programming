@@ -6,16 +6,14 @@
 #include <iostream>
 using namespace std;
 
-class binary
-{
-
+class binary{
     string s; // ~  s is a private member of the given class ;
 
-public:
-    void read();       // ^ void read(void);
-    void check();      // ^ void read(void);
-    void compliment(); // ^ void compliment(void)
-    void display();    // ^ void display(void);
+    public:
+        void read();       // ^ void read(void);
+        void check();      // ^ void read(void);
+        void compliment(); // ^ void compliment(void)
+        void display();    // ^ void display(void);
 };
 
 // * declaration outside the class by using scope re operator

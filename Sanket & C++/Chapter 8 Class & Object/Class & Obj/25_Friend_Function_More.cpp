@@ -44,6 +44,33 @@ void add(X p1, Y p2)
 {
     cout << "Addition of two numbers : " << p1.data + p2.num << endl;  // here you don't have permission to access the private data of class .so we need to add Friend function in class to solve this problem,
 }
+
+class Sanket {
+
+    int data = 34;
+    public:
+        int om = 333;
+    
+    friend class ok;     
+};
+
+
+class ok{
+
+    char s = 'a';
+    public:
+
+    ok() {
+        cout << "OK IS CALLED";
+    }
+
+    void getData(Sanket s1 , char c) {
+        cout << "Data from Sanket class " << s1.data << endl;
+        cout << "Data from Sanket class " << s1.om << endl;
+        cout << "Data from OK class " << s << endl;
+    }
+};
+
 int main()
 {
     X a;
@@ -54,6 +81,14 @@ int main()
 
     add(a,b);  // Don't write like this --> add (a + b ); <<-- it thrown error ............
     // here friend function "add (a,b)" doing work to do addition of two numbers by taking two numbers form two different classes......... 
+
+
+    Sanket s;
+
+    ok k;
+    k.getData(s,'a');
+
+
     return 0;
 }
 

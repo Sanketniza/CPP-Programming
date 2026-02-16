@@ -103,15 +103,6 @@ int main() {
 
 
 
-
-
-
-
-
-
-
-
-
     // //Static
     // Hero a;
 
@@ -119,11 +110,6 @@ int main() {
     // Hero *b = new Hero();
     // //manually destructor call
     // delete b;
-
-
-
-
-
 
 
 //     Hero hero1;
@@ -153,19 +139,6 @@ int main() {
 //     hero2.print();
 
 
-    
-
-
-
-
-
-
-
-
-
-
-
-
 
     // //Hero tt;
 
@@ -180,9 +153,6 @@ int main() {
 
     // Hero temp(22, 'B');
     // temp.print();
-
-
-
 
 
 
