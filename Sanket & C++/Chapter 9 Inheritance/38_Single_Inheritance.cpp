@@ -88,8 +88,8 @@ class base // todo--> base class (Parent class)
 public:
     int data2;
     void setData();
-    int getData1();  // * If I take here void getData1() , I don't know why its show me error
-    int getData2();  // * If I take here void getData2() , I don't know why its show me error
+    int getData1();  // * int because we are returing data...
+    int getData2();  // * int becuase we are returing data..
 };
 
 void base :: setData(void)
@@ -108,8 +108,8 @@ int base ::getData2() // here we use getter function
     return data2;
 }
 
-class derived : private base // todo --> derived class from base class (Child class)
-{           //* when become a private derivation class
+class derived : private base // todo --> derived class from base class 
+{           //* when become a private derivation class 
     int data3;
 
 public:

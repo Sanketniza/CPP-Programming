@@ -17,18 +17,16 @@ using namespace std;
 class Base1
 {
 public:
-    void greet()
-    {
-        cout << "Hello " << endl;
+    void greet() {
+        cout << "Hello I am Base1 " << endl;
     }
 };
 
 class Base2
 {
 public:
-    void greet()
-    {
-        cout << "How are you feeling " << endl;
+    void greet() {
+        cout << "Hello I am Base2 " << endl;
     }
 };
 
@@ -37,7 +35,8 @@ class Derived : public Base1, public Base2
     // int a ;
       public:
         void greet(){
-             Base1 :: greet(); //* this remove the ambiguity of compiler . Here compiler understand the which greet() function i have to call.If you dont write like this ambiguity can seen...........
+            Base1 :: greet(); //* this remove the ambiguity of compiler . Here compiler understand the which greet() function i have to call.If you dont write like this ambiguity can seen...........
+            Base2 :: greet();
         }
 };
 
@@ -70,8 +69,8 @@ int main()
       Base1 a;
       Base2 b;
 
-      a.greet();
-      b.greet();
+    //   a.greet();
+    //   b.greet();
 
      Derived c; 
      c.greet();

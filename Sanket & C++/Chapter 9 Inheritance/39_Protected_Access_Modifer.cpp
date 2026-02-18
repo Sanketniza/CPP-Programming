@@ -1,15 +1,14 @@
 #include<iostream>
 using namespace std;
  
-class base
-   { 
-       protected:
-         int a;
+class base{ 
+    protected:
+        int a;
 
-       public:
-         int b;
+    public:
+      int b;
   
-   }; 
+}; 
 
  /* 
      ! For a protected member:

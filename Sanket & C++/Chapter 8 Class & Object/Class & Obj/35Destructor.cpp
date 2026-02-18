@@ -3,9 +3,9 @@
     /* -------------------------------------------------------------------------- */
 
     //* Destructor never takes an argument nor does it return any value
+    //* It is used to free the memory allocated by a constructor
     //* It gets executed automatically as the class is going to get destroyed
     //* It is used to clean things up before the program exits
-    //* It is used to free the memory allocated by a constructor
     //* It can be defined as private, protected or public
      
     //* It can be defined as inline or not
@@ -26,16 +26,16 @@ using namespace std;
  
 class num{
    public:
-     num(){  //todo --> This is an Constructor
-        count++;
-        cout << "Constructor called : " << count <<  endl;
-     }
+    num(){  //todo --> This is an Constructor
+       count++;
+       cout << "Constructor called : " << count <<  endl;
+    }
 
-     ~num(){  //todo -->  This is an Destructor ...
-        count--;
-        cout << "Destructor called : " << count << endl;
-     }
- }; 
+    ~num(){  //todo -->  This is an Destructor ...
+       count--;
+       cout << "Destructor called : " << count << endl;
+    }
+}; 
   int main() { 
 
     cout << "We are inside our main function " << endl;

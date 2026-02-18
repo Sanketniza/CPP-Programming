@@ -60,7 +60,7 @@
 
 /* 
 
-     ! For a protected member:
+    ! For a protected member:
               
                 todo-->          Public derivation      Private derivation       Protected derivation
             

@@ -12,49 +12,41 @@
 using namespace std;
 
 /*
-   Syntax for inheritance in multiple inheritance
+    Syntax for inheritance in multiple inheritance
 
-   todo:  DerivedC : visibility-mode base1 , visibility-mode base2
-   todo:  {
-   todo:   Class body of class "DerivedC"
-   todo:  }
-
+    todo:  DerivedC : visibility-mode base1 , visibility-mode base2
+    todo:  {
+    todo:   Class body of class "DerivedC"
+    todo:  }
  */
 
-class Base1
-{
-protected:
-  int base1int;
+class Base1 {
+    protected:
+        int base1int;
 
-public:
-  void set_base1int(int a)
-  {
-    base1int = a;
-  }
+    public:
+        void set_base1int(int a) {
+            base1int = a;
+        }
 };
 
-class Base2
-{
-protected:
-  int base2int;
+class Base2 {
+    protected:
+        int base2int;
 
-public:
-  void set_base2int(int a)
-  {
-    base2int = a;
-  }
+    public:
+        void set_base2int(int a) {
+        base2int = a;
+    }
 };
 
-class Derived : public Base1, public Base2
-{
-
-public:
-  void show()
-  {
-    cout << " The value of Base1 is : " << base1int << endl;
-    cout << " The value of Base2 is : " << base2int << endl;
-    cout << " The addition of Base1 and Base2 is : " << base1int + base2int << endl;
-  }
+class Derived : public Base1, public Base2 {
+    public:
+        void show() {
+            cout << " The value of Base1 is : " << base1int << endl;
+            cout << " The value of Base2 is : " << base2int << endl;
+            cout << " The addition of Base1 and Base2 is : " << base1int + base2int << endl;
+        }
 };
 
 /*
@@ -85,41 +77,38 @@ int main()
 #include <iostream>
 using namespace std;
 
-class base1
-{
-private:
-  int base1;
+class base1 {
+    private:
+        int base1;
 
-public:
-  void setBase1(int a)
-  {
-    base1 = a;
-  }
+    public:
 
-  int ok1()
-  {
-    return base1;
-  }
+    void setBase1(int a) {
+        base1 = a;
+    }
+
+    int ok1() {
+        return base1;
+    }
 };
 
-class base2
-{
-private:
-  int base2;
+class base2 {
+    private:
+        int base2;
 
-public:
-  void setbase2(int a)
-  {
-    base2 = a;
-  }
+    public:
+        void setbase2(int a)
+        {
+            base2 = a;
+        }
 
-  int ok2()
-  {
-    return base2;
-  }
+        int ok2()
+        {
+            return base2;
+        }
 };
 
-class derived : public base1, public base2
+class derived : private base1, private base2
 {
 public:
   void display()
@@ -147,4 +136,3 @@ int main()
 
   return 0;
 }
-* /

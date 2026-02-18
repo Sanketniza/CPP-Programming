@@ -15,42 +15,34 @@
 #include <iostream>
 using namespace std;
 
-class student
-{
-protected:
-    int roll_no;
+class student {
+    protected:
+        int roll_no;
 
-public:
-    void set_roll_no(int); // Function declaration
-    void get_roll_no(void); // Function declaration
+    public:
+        void set_roll_no(int r){
+            roll_no = r;
+        }
+        void get_roll_no(void); // Function declaration
 };
 
-void student::set_roll_no(int r) // Function definition
-{
-    roll_no = r;
-}
-
-void student ::get_roll_no()
-{
+void student ::get_roll_no() {
     cout << "roll_no: " << roll_no << endl;
 }
 
-class exam : public student
-{
-protected:
-    float maths;
-    float physics;
+class exam : public student {
+    protected:
+        float maths;
+        float physics;
 
-public:
-    void set_mark(float, float);
-    void get_mark(void);
+    public:
+        void set_mark(float m1, float m2){
+            maths = m1;
+            physics = m2;
+        }
+
+        void get_mark(void);
 };
-
-void exam ::set_mark(float m1, float m2)
-{
-    maths = m1;
-    physics = m2;
-}
 
 void exam ::get_mark(){
     cout << "The marks obtained in maths are : " << maths << endl;
