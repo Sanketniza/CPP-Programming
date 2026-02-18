@@ -1,51 +1,31 @@
-#include<iostream>
-#include<bits/stdc++.h>
+#include <iostream>
+#include <string>
 using namespace std;
 
-class Animal {
+// Class representing a Programmer
+class Programmer
+{
+  private:
+    string name; // Private variable
 
-    public:
-        int age ;
-        int weight;
+  public:
+    // Getter method to access the private data
+    string getName()
+    {
+        return name;
+    }
 
-
-        Animal() {
-            cout << "1.constructor called" << endl;
-        }
-
-        Animal(int age, int weight) {
-            cout << "2.constructor called" << endl;
-            this->age = age;
-            this->weight = weight;
-        }
-
-        Animal(int age) {
-            cout << "3.constructor called" << endl;
-            this->age = age;
-            this->weight = weight;
-        }
-
-        Animal(char a , int weight) {
-            cout << "4.constructor called"<< endl;
-        }
-
-        // Animal(int a , int b) {
-        //     cout << "5.constructor called"<< endl;
-        // }
+    // Setter method to modify the private data
+    void setName(string newName)
+    {
+        name = newName;
+    }
 };
 
-int main() {
-
-    Animal c;
-
-    // 1. Implicit Call: passing arguments directly
-    Animal a(10, 50);
-    Animal d(3);
-    Animal e('A' , 3);
-    // Animal f(333 ,333);
-
-    // 2. Explicit Call: explicitly calling the constructor
-    // Animal b = Animal(5, 25);
-
- return 0;
+int main()
+{
+    Programmer p;
+    p.setName("Geek");                        // Set the name
+    cout << "Name=> " << p.getName() << endl; // Get the name
+    return 0;
 }

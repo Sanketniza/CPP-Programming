@@ -6,28 +6,24 @@
 #include <iostream>
 using namespace std;
 
-class shopItem
-{
+class shopItem {
 
     int id;
     float price;
 
 public:
-    void setData(int a, int b)
-    {
+    void setData(int a, int b) {
         id = a;
         price = b;
     }
 
-    void getData(void)
-    {
+    void getData(void) {
         cout << "Code of this item is: " << id << endl;
         cout << "The price of this item is: " << price << endl;
     }
 };
 
-int main()
-{
+int main() {
 
     int size = 3;
 
@@ -41,8 +37,7 @@ int main()
     int p, i;
     float q;
 
-    for (i = 0; i < size; i++)
-    {
+    for (i = 0; i < size; i++) {
         cout << "Enter id and  price of Item : " << i << endl;
         cin >> p >> q;
         // (*ptr).setData(p,q); // todo : indented of this line I can write below line..
@@ -50,10 +45,10 @@ int main()
         ptr++;
     }
 
-    for (i = 0; i < size; i++)
-    {
+    for (i = 0; i < size; i++) {
         ptrTemp->getData();
         ptrTemp++;
     }
+
     return 0;
 }

@@ -61,9 +61,9 @@ public:
     }
 };
 
-class Derived : public Base1, public Base2      // todo: Base1 () constructor called than Base2 () constructor called " << data2 << endl;
+class Derived : public Base1, public Base2 {     // todo: Base1 () constructor called than Base2 () constructor called " << data2 << endl;
 //* class Derived : public Base2, public Base1  // Base2 () constructor called than Base1 () constructor called " << data2 << endl;
-{
+
    int Derived1 , Derived2;
      public:
      //^ Initialize List only useful in 𝗖𝗼𝗻𝘀𝘁𝗿𝘂𝗰𝘁𝗼𝗿 

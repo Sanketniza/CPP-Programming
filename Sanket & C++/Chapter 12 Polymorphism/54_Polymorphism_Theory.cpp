@@ -6,10 +6,11 @@
 
 /* 
    todo:   polymorphism
-             poly = many
-             morphism = form
+            poly = many
+            morphism = form
 
      *  - One name and multiple forms
+     *  -  polymorphism allows the same method or object to behave differently based on the context,
      *  - eg. Fuction overloading , Operator overloading
      *  - eg. Virtual Function 
      

@@ -6,27 +6,25 @@
 #include <iostream>
 using namespace std;
 
-class Complex
-{
-  int real;
-  int imaginary;
+class Complex {
+    int real;
+    int imaginary;
 
-public:
-  void getData(int a, int b)
-  {
-    real = a;
-    imaginary = b;
-  }
+    public:
+    void getData(int a, int b)
+    {
+        real = a;
+        imaginary = b;
+    }
 
-  void printData()
-  {
-    cout << "The rear number is :" << real << endl;
-    cout << "The imaginary number is :" << imaginary << endl;
-  }
+    void printData()
+    {
+        cout << "The rear number is :" << real << endl;
+        cout << "The imaginary number is :" << imaginary << endl;
+    }
 };
 
-int main()
-{
+int main() {
   // ? A
   // Complex s;
   // s.getData(2, 5);
