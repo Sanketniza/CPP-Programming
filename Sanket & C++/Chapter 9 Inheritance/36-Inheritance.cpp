@@ -13,6 +13,8 @@
 /*             //!         What is Inheritance in c++?                       */
 /* -------------------------------------------------------------------------- */
 
+//-  It is the mechanism by which one class is allowed to inherit the features (fields and methods) of another class. Inheritance means creating new classes based on existing ones. A class that inherits from another class can reuse the methods and fields of that class.
+
 //* Inherit the one property into another 
 //* The concept of reusability is in c++ is supported using inheritance
 //* we can reuse the properties of an existing class by ingesting from it
@@ -35,18 +37,20 @@
     //* A derived class with only one base class
     //todo --> one parent and one child < base class = parent  , derived class = child >
     //^ Ex- 1 base class --> one derived class
-
+    
     //? 2) multiple inheritance
+    //- one class can have more than one superclass and inherit features from all parent classes.
     //* A derived class with more than one base class
     //todo --> multiple parent and one child .
     //^ Ex- more than 1 base class --> one derived class
-
+    
     //? 3) Hierarchical inheritance
     //* Several derived classes from a single base class
     //todo --> one parent and multiple child
     //^ Ex- 1 base class --> more than 1 derived class
-
+    
     //? 4) Multilevel inheritance
+    //- class is derived from another derived class
     //* Deriving a class from already derived class
     // todo --> A --> B --> C --> D
     
