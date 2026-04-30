@@ -7,7 +7,7 @@
 using namespace std;
 
 class binary{
-    string s; // ~  s is a private member of the given class ;
+    string s; //*  s is a private member of the given class ;
 
     public:
         void read();       // ^ void read(void);
